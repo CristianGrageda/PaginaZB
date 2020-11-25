@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<!-----------------------------------------------------------------
+Autor de la pagina: Cristian Alejandro Grageda Encinas
+
+La pagina fue diseñada primeramente a tamaño de celular,
+posteriormente en la parte RESPONSIVE se adaptó a tamaño laptop
+------------------------------------------------------------------->
+<html lang="es">
+	<head>
+		<title>Zona Barra</title>
+		<meta charset="utf-8">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<!-- Hoja de estilos -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- Iconos -->
+		<link rel="stylesheet" type="text/css" href="css/fontello.css">
+		<link rel="icon" type="image/png" href="imagenes/logoZB.png" />
+	</head>
+	<body>
+
+		<!----- MENU DE NAVEGACION ----->
+		<header>
+			<div class="barra-de-menu contenedor">
+				<a href="index.html"><img src="imagenes/logoZB.jpg"></a>
+
+				<!-- Checkbox que abre el menu -->
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<nav class="navegacion">
+					<ul>
+						<li><a href="#inicio">Inicio</a></li>
+						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+						<li><a href="#preguntas">Preguntas Frecuentes</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+		
+
+		<!----- PAGINA PRINCIPAL ----->
+		<div class="contenedor">
+			<main>
+
+				<!-- SECCION DE BANNER-->
+				<section id="banner">
+					<img src="imagenes/banner.jpg">
+					<div class="contenedor-inicio">
+						<h1>ZONA BARRA</h1>
+						<h2>Los mejores tragos para tu fiesta!</h2>
+					</div>
+				</section>
+
+				<!----- SECCION DE INICIO ----->
+				<section id="inicio">
+					<h3>CONOCENOS</h3>
+					<p>Zona Barra es una empresa de zona sur que ofrece servicios de bartenders en eventos, fiestas privadas, quinceaños, entre otros. Se busca complacer la necesidad del cliente y poder brindarles una experiencia unica e inolvidable en su celebración. Tenemos los mejores servicios y variedad de sabores a muy buenos precios para el disfrute de los invitados.</p>
+					<!-- Carousel de Bootstrap -->
+					<div id="carouselExampleIndicators" class="carousel slide tamanio" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="imagenes/foto 3.jpg" class="d-block w-100" alt="foto 1">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="imagenes/foto 4.jpg" class="d-block w-100" alt="foto 2">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="imagenes/foto 5.jpg" class="d-block w-100" alt="foto 3">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</section>
+
+				<!----- SECCION DE SERVICIOS ----->
+				<section id="servicios">
+					<h3>SERVICIOS</h3>
+					<!-- Servicios dividos en 3 partes -->
+					<div class="contenedor-servicios">
+						<!-- Servicio 1 -->
+						<div class="contenedor-servicios-primero">
+							<img src="imagenes/servicio1.jpg">
+						</div>
+						
+						<div class="contenedor-servicios-segundo">
+							<p>Contamos con los Bartenders y herramientas necesarias para cubrir la necesidad de todos de los invitados</p>
+						</div>
+					</div>
+
+					<!-- Servicio 2 -->
+					<div class="contenedor-servicios">
+						<div class="contenedor-servicios-primero img2">
+							<img src="imagenes/servicio2.jpg">
+						</div>
+						
+						<div class="contenedor-servicios-segundo texto2">
+							<p>Lista personalizada de hasta 10 tragos a eleccion del cliente. Consulte por los tragos que ofrecemos</p>
+						</div>
+					</div>
+
+					<!-- Servicio 3 -->
+					<div class="contenedor-servicios">
+						<div class="contenedor-servicios-primero">
+							<img src="imagenes/servicio3.jpg">
+						</div>
+						
+						<div class="contenedor-servicios-segundo">
+							<p>Los precios varian depende a la cantidad de invitados y a las horas del servicio</p>
+						</div>
+					</div>
+				</section>
+
+				<!----- SECCION DE CONTACTOS ----->
+				<section id="contacto">
+					<h3>CONTACTOS</h3>
+					<!-- Parrafos con Iconos -->
+					<p class="icon-whatsapp">(+54) 2224466337</p>
+					<p class="icon-mail">cristian_9816@hotmail.com</p>
+				</section>
+
+				<!----- SECCION DE PREGUNTAS FRECUENTES ----->
+				<section id="preguntas">
+					<h3>PREGUNTAS FRECUENTES</h3>
+					
+					<!-- Pregunta 1 -->
+					<div id="seccion-preguntas">
+						<div class="contenedor-preguntas">
+							<div class="pregunta">
+								<p>Llegan hasta zona norte?</p>
+							</div>
+							<div class="respuesta">
+								<p> No, nos manejamos únicamente por la zona sur de Buenos Aires</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Pregunta 2 -->
+					<div id="seccion-preguntas">
+						<div class="contenedor-preguntas">
+							<div class="pregunta">
+								<p>Traen las bebidas?</p>
+							</div>
+							<div class="respuesta">
+								<p> Las bebidas quedan a cargo del cliente, nosotros solo ofrecemos los servicios</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Pregunta 3 -->
+					<div id="seccion-preguntas">
+						<div class="contenedor-preguntas">
+							<div class="pregunta">
+								<p>Como me comunico con ustedes?</p>
+							</div>
+							<div class="respuesta">
+								<p>Podes comunicarte mediante WhatsApp o podes enviarnos un correo electronico, todo esta en la seccion de Contactos</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pregunta 4 -->
+					<div id="seccion-preguntas">
+						<div class="contenedor-preguntas">
+							<div class="pregunta">
+								<p>Que tragos son los que sirven?</p>
+							</div>
+							<div class="respuesta">
+								<p>Los tragos con los que trabajamos los podras encontrar en nuestra seccion de "Tragos" (proximamente)</p>
+							</div>
+						</div>
+					</div>	
+				</section>
+			</main>
+		</div>
+		<!----- PIE DE PAGINA ----->
+		<footer>
+			<div class="contenedor-final">
+
+				<div class="enlaces">
+					<a href="https://www.fb.com/Zona-Barra-486350008373623" target="_blank" class="icon-facebook"></a>
+					<a href="https://www.instagram.com/zona_barra/" target="_blank" class="icon-instagram"></a>
+					<a href="https://www.whatsapp.com/" target="_blank" class="icon-whatsapp"></a>
+					<a href="https://www.google.com" target="_blank" class="icon-mail"></a>
+				</div>
+
+				<div class="derechos">
+					<p>©2020 Cristian Grageda - Todos los derechos reservados</p>
+				</div>
+
+			</div>
+		</footer>
+
+		<!--- Scripts necesarios para el funcionamiento de Carousel de Bootstrap --->
+		<script src="js/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
