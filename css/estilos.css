@@ -402,7 +402,7 @@ footer .contenedor-final .enlaces a:hover{
 		font-size: 16px;
 	}
 	div .contenedor-preguntas:hover div.respuesta{
-	height: 90px;
+	  height: 90px;
 	}
 
 }
