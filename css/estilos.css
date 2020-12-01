@@ -15,6 +15,7 @@ body{
 
 .contenedor{
 	width: 90%;
+	min-width: 480px;
 	margin: 0 auto;
 }
 
@@ -63,7 +64,7 @@ header label{
 	height: 60px;
 	text-decoration: none;
 	padding: 50px;
-	font-size: 40px;
+	font-size: 30px;
 	border-bottom: 2px solid rgba(34,141,0,0.5);
 }
 .navegacion a:hover{
@@ -100,20 +101,18 @@ header label{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
 	
 }
 #banner h1{
 	padding-left: 10px;
-	font-size: 60px;
+	font-size: 50px;
 	width: 50%;
 	color: rgb(13,113,0);
 	text-shadow: 5px 5px 5px black;
 }
 #banner h2{
 	padding-left: 10px;
-	font-size: 50px;
+	font-size: 30px;
 	width: 50%;
 	color: rgb(183,177,0);
 	text-shadow: 5px 5px 5px black;
@@ -128,12 +127,12 @@ header label{
 h3{
 	color: rgb(13,113,0);
 	text-align: center;
-	font-size: 80px;
+	font-size: 50px;
 	text-shadow: 5px 5px 5px black;
 }
 #inicio p{
 	color: rgb(183,177,0);
-	font-size: 40px;
+	font-size: 30px;
 	text-shadow: 5px 5px 5px black;
 }
 .carousel-item > img{
@@ -148,6 +147,7 @@ h3{
 	align-items: center;
 }
 .contenedor-servicios-primero{
+	transition: all 0.2s;
 	width: 100%;
 }
 .contenedor-servicios-primero img{
@@ -158,6 +158,7 @@ h3{
 	margin-top: 20px;
 }
 .contenedor-servicios-segundo{
+	transition: all 0.2s;
 	position: absolute;
 	width: 100%;
 }
@@ -166,14 +167,14 @@ h3{
 	width: 100%;
 	color: rgb(183,177,0);
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	text-shadow: 5px 5px 5px black;
 }
 
 /* ----- SECCION DE CONTACTOS -----*/
 #contacto p{
 	color: rgb(183,177,0);
-	font-size: 40px;
+	font-size: 22px;
 	text-shadow: 5px 5px 5px black;
 	letter-spacing: 1px;
 	text-align: center;
@@ -213,10 +214,11 @@ div .pregunta{
 }
 .pregunta p{
 	margin: 5px;
-	font-size: 30px;
+	font-size: 20px;
 	color: rgb(13,113,0);
 }
 div .respuesta{
+	transition: 0.5s;
 	height: 0;
 	overflow: hidden;
 	background: rgba(13,113,0,0.2);
@@ -225,12 +227,12 @@ div .respuesta{
 
 .respuesta p{
 	margin: 15px;
-	font-size: 20px;
+	font-size: 15px;
 	color: rgb(183,177,0);
 }
 
 div .contenedor-preguntas:hover div.respuesta{
-	height: auto;
+	height: 80px;
 }
 div .contenedor-preguntas:hover div.pregunta{
 	background: rgba(13,113,0, 0.7);
@@ -253,7 +255,7 @@ footer .contenedor-final{
 }
 footer .contenedor-final .derechos{
 	color:rgb(34,141,0);
-	font-size: 25px;
+	font-size: 15px;
 	text-align: center;
 }
 footer .contenedor-final .enlaces{
@@ -284,7 +286,9 @@ footer .contenedor-final .enlaces a:hover{
 
 
 /* ----- PAGINA RESPONSIVE -----*/
-@media (min-width: 1024px){
+
+@media (min-width: 1000px){
+
 	/* ----- HEADER ----- */
 	.contenedor{
 		width: 80%;
@@ -300,6 +304,7 @@ footer .contenedor-final .enlaces a:hover{
 		display: none;
 	}
 	.navegacion{
+		transition: all 0s;
 		position: static;
 		width: auto;
 		height: 50px;
@@ -314,6 +319,16 @@ footer .contenedor-final .enlaces a:hover{
 		font-size: 16px;
 		padding: 16px;
 		border-bottom: 0;
+	}
+
+	/* ----- BANNER ----- */
+	#banner h1{
+	padding-left: 20px;
+	font-size: 80px;
+	}
+	#banner h2{
+		padding-left: 20px;
+		font-size: 40px;
 	}
 
 	/* ----- SECCION DE SERVICIOS ----- */
@@ -354,6 +369,8 @@ footer .contenedor-final .enlaces a:hover{
 	.respuesta p{
 		font-size: 16px;
 	}
+	div .contenedor-preguntas:hover div.respuesta{
+	height: 70px;
 
 	/* ----- PIE DE PAGINA ----- */
 	footer .contenedor-final .derechos{
