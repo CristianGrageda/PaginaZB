@@ -371,10 +371,6 @@ footer .contenedor-final .enlaces a:hover{
 	}
 	div .contenedor-preguntas:hover div.respuesta{
 	height: 70px;
-
-	/* ----- PIE DE PAGINA ----- */
-	footer .contenedor-final .derechos{
-		font-size: 15px;
 	}
 
 }
