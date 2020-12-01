@@ -15,7 +15,7 @@ body{
 
 .contenedor{
 	width: 90%;
-	min-width: 480px;
+	min-width: 320px;
 	margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ header{
 	background-color: rgb(0,0,0);
 	color:rgb(34,141,0);
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -38,18 +38,18 @@ header .contenedor{
 }
 header img{
 	float: left;
-	height: 100px;
+	height: 80px;
 }
 header label{
 	float: right;
-	font-size: 60px;
+	font-size: 50px;
 	margin: 6px 0;
 	cursor: pointer;
 
 }
 .navegacion{
 	position: absolute;
-	top: 100px;
+	top: 80px;
 	left: 0;
 	width: 100%;
 	height: 100vh;
@@ -61,10 +61,10 @@ header label{
 	display: block;
 	text-align: center;
 	color: rgb(34,141,0);
-	height: 60px;
+	height: 50px;
 	text-decoration: none;
-	padding: 50px;
-	font-size: 30px;
+	padding: 40px;
+	font-size: 20px;
 	border-bottom: 2px solid rgba(34,141,0,0.5);
 }
 .navegacion a:hover{
@@ -89,7 +89,7 @@ header label{
 /* ----- SECCION DEL BANNER -----*/
 
 #banner{
-	margin-top: 110px;
+	margin-top: 90px;
 	position: relative;
 }
 #banner img{
@@ -105,14 +105,14 @@ header label{
 }
 #banner h1{
 	padding-left: 10px;
-	font-size: 50px;
+	font-size: 40px;
 	width: 50%;
 	color: rgb(13,113,0);
 	text-shadow: 5px 5px 5px black;
 }
 #banner h2{
 	padding-left: 10px;
-	font-size: 30px;
+	font-size: 20px;
 	width: 50%;
 	color: rgb(183,177,0);
 	text-shadow: 5px 5px 5px black;
@@ -127,12 +127,12 @@ header label{
 h3{
 	color: rgb(13,113,0);
 	text-align: center;
-	font-size: 50px;
+	font-size: 35px;
 	text-shadow: 5px 5px 5px black;
 }
 #inicio p{
 	color: rgb(183,177,0);
-	font-size: 30px;
+	font-size: 25px;
 	text-shadow: 5px 5px 5px black;
 }
 .carousel-item > img{
@@ -163,18 +163,18 @@ h3{
 	width: 100%;
 }
 .contenedor-servicios-segundo p{
-	padding: 20%;
+	padding: 10%;
 	width: 100%;
 	color: rgb(183,177,0);
 	text-align: center;
-	font-size: 30px;
+	font-size: 24px;
 	text-shadow: 5px 5px 5px black;
 }
 
 /* ----- SECCION DE CONTACTOS -----*/
 #contacto p{
 	color: rgb(183,177,0);
-	font-size: 22px;
+	font-size: 16px;
 	text-shadow: 5px 5px 5px black;
 	letter-spacing: 1px;
 	text-align: center;
@@ -227,7 +227,7 @@ div .respuesta{
 
 .respuesta p{
 	margin: 15px;
-	font-size: 15px;
+	font-size: 11px;
 	color: rgb(183,177,0);
 }
 
@@ -286,8 +286,40 @@ footer .contenedor-final .enlaces a:hover{
 
 
 /* ----- PAGINA RESPONSIVE -----*/
+/*----- TAMAÑO CELULAR MAS GRANDE -----*/
+@media (min-width: 500px){
+	.navegacion a{
+		padding: 50px;
+		font-size: 30px;
+	}
 
-@media (min-width: 1000px){
+	/* ----- BANNER ----- */
+	#banner h1{
+	font-size: 60px;
+	}
+	#banner h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 50px;
+	}
+	#inicio p, #servicios p, #contacto p{
+		font-size: 30px;
+	}
+	.pregunta p{
+		font-size: 23px;
+	}
+	.respuesta p{
+		font-size: 15px;
+	}
+	div .contenedor-preguntas:hover div.respuesta{
+	height: 80px;
+	}
+
+}
+
+/*----- TAMAÑO LAPTOP -----*/
+@media (min-width: 900px){
 
 	/* ----- HEADER ----- */
 	.contenedor{
@@ -370,7 +402,7 @@ footer .contenedor-final .enlaces a:hover{
 		font-size: 16px;
 	}
 	div .contenedor-preguntas:hover div.respuesta{
-	height: 70px;
+	  height: 90px;
 	}
 
 }
