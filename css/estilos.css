@@ -174,7 +174,7 @@ h3{
 /* ----- SECCION DE CONTACTOS -----*/
 #contacto p{
 	color: rgb(183,177,0);
-	font-size: 16px;
+	font-size: 22px;
 	text-shadow: 5px 5px 5px black;
 	letter-spacing: 1px;
 	text-align: center;
@@ -303,7 +303,7 @@ footer .contenedor-final .enlaces a:hover{
 	h3{
 		font-size: 50px;
 	}
-	#inicio p, #servicios p, #contacto p{
+	#inicio p, #servicios p{
 		font-size: 30px;
 	}
 	.pregunta p{
